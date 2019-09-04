@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D81B60</color>
+    <color name="colorPrimaryDark">#D81B60</color>
+    <color name="transparent">#0000</color>
+    <color name="samColor">#EA501D</color>
+    <color name="facebookColor">#E38857</color>
+    <color name="googleColor">#8FA40C</color>
+    <color name="twitterColor">#2BB709</color>
+    <color name="printerestColor">#A66269</color>
+    <color name="jostColor">#FC35A3</color>
+</resources>

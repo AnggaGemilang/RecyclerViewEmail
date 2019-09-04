@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_star_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waktu" />
+
+        <TextView
+            android:id="@+id/inisial"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="S"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_sam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10: 42"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NewApi" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sam"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toRightOf="@+id/inisial"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subjek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="Weekend adventure"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toRightOf="@+id/inisial"
+            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+        <TextView
+            android:id="@+id/isi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="55"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Let's go fishing with John Kindin and others. we..."
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toRightOf="@+id/inisial"
+            app:layout_constraintTop_toBottomOf="@+id/subjek" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc" />
+
+</LinearLayout>
+
